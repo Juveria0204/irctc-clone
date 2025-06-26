@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--Meta tag for making websites mobile responsive-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a6abc6c161.js" crossorigin="anonymous"></script>
+    <title>IRCTC Next Generation eTicketing System</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+	
+	*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	
+	}
+	nav{
+	background-color: white;
+	height: 13vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	padding-top: 2vh;
+	padding-bottom: 4vh;
+	font-family: 'Poppins', sans-serif;
+	}
+	nav img{
+	width: 10vh;
+	height: 10vh;
+	margin: 0 2vh;
+	}
+	nav ul li{
+	display: inline-block;
+	padding: .1vw .1vw 0 .1vw;
+	}
+	nav ul li a {
+	color: black;
+	text-transform: uppercase;
+	padding: 1vw;
+	margin: 0;
+	font-weight: 700;
+	font-size: 1.1vw;
+	}
+	.lightul a{
+	font-weight: 100;
+	}
+	.lists{
+	display: flex;
+	flex-wrap: wrap;
+	width: 72vw;
+	justify-content: center;
+	margin: 0 1vh;
+	}
+	.mainli{
+	background: #213d77;
+    border: 3px solid white;
+    border-radius: 0.5vh;
+	padding-top: 1vh;
+	padding-bottom: 0vh;
+	}
+	.mainli a{
+	color: white;
+	}
+	main{
+	height: 90vh;
+	background-image: url("https://www.informalnewz.com/wp-content/webp-express/webp-images/uploads/2023/04/Vande-Bharat-Express-1024x576.jpg.webp");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	}
+	.formheading{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 7vh 7vh 2vh 7vh;
+	color: #fff;
+	font-weight: 700;
+	height: 4vh;
+	width: 40.8vw;
+	margin: 1vw;
+	}
+	.formheading img{
+	height: 5vh;
+	margin: 0 3vw;
+	}
+	.formheading1,.formheading2{
+	display: flex;
+	flex-wrap:wrap;
+	padding: 0 2vw;
+	background: #213D77;
+	line-height: 2vw;
+	}
+	.formheading2{
+	display: flex;
+	flex-wrap: wrap;
+	background: #213d77;
+	line-height: 2vw;
+	}
+	.formheading{
+	margin: 0 7vh;
+	color: #fff;
+	font-weight: 700;
+	width: 40.8vw;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding:1vh 0 1vh 0;
+	}
+	form{
+	margin: 0 7vh;
+	color: #fff;
+	font-weight: 700;
+	width: 40.8vw;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding:1vh 0 1vh 0;
+	}
+	form h2{
+	color: #082b71;
+	width:100%;
+	text-align: center;
+	font-size: 1.55vw;
+	}
+	.flog{
+	height: 14vh;
+	margin: 1vw;
+	}
+	.forminputs{
+	width: 30vw;
+	height: 6vh;
+	border: 1px solid #a6a6a6;
+	border-radius: 5px;
+	}
+	.formtext{
+	height: 5.4vh;
+	border: 2px solid white;
+	border-radius: 5px;
+	}
+	.formtext:hover{
+	border: 2px solid white;
+	}
+	.forminputs:hover{
+	border: 1px solid black;
+	}
+	
+	form i {
+	color: #213d77;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	padding-top: 2vh;
+	}
+	.from{
+	width: 23.35vw;
+	margin: 3.6vh 2vh 1vh;
+	}
+	.from input{
+	width: 20vw;
+	}
+	.icon {
+    padding: 10px;
+    min-width: 40px;
+    }
+	.forminputs{
+	display: flex;
+	flex-wrap: wrap;
+	}
+	::placeholder{
+	color: #082b71;
+	}
+	label{
+	color: #082b71;
+	padding-left: 1vw;
+	}
+	.date{
+	width: 13vw;
+	}
+	.date input{
+	width: 9.827vw;
+	font-size: 1vh;
+	}
+	.aside{
+	display: inline-block;
+	}
+	.to{
+	width: 23.35vw;
+	margin: 1vh 2vh 1vh;
+	}
+	.to input{
+	width: 20vw;
+	}
+	#country{
+	width: 20vw;
+	}
+	.class {
+    width: 14vw;
+    margin-top: 2vw;
+    }
+	.class input{
+	width: 2vw;
+	font-size: 1vh;
+	}
+	.inputradio span{
+	color: #082b71;
+	margin-right: 1vw;
+    font-family: 'Quicksand', sans-serif;
+	}
+	.inputradio{
+	margin: 2vh;
+	font-family: sans-serif;
+	font-size: 1vw;
+	}
+	#submitbtn{
+	border-radius: 6px;
+    background: #fb792b;
+    color: #fff;
+    border-color: #fb792b;
+    font-size: 1.1vw;
+	font-weight: 800;
+	width: 8vw;
+	height: 4vh;
+	margin: 0 0 1vh 1vw;
+	}
+	.info{
+	margin: 2.5vh 7vh;
+	color: #fff;
+	font-weight: 900;
+	width: 40vw;
+	background: white;
+	padding:1vh; 
+	color: blue;
+	font-size: 1.8vh;
+	line-height: 3.4vh;
+	height: 10vh;
+	font-family: 'Poppins', sans-serif;
+	position: relative;
+	}
+	.ad{
+	margin: 5vh 25vw;
+	}
+	.ad2{
+	margin: 4vh 18vw;
+	}
+	.ad3{
+	margin: 1vh 18vw;
+	}
+	#rules{
+	position: fixed;
+	bottom: 2vw;
+	background: white;
+    right: 22vw;
+    width: 60vw;
+	height: 88vh;
+	font-weight: 700;
+    border: 3px solid #73AD21;
+	list-style: inside;
+	overflow-y: scroll;
+	
+    }
+	#rules nav{
+	background: #082b71;
+	width: 100%;
+	height: 2.5vh;
+	color: white;
+	font-weight: 700;
+	font-size: 1.5vw;
+	}
+	#rules p{
+	padding: 3vh;
+	padding-bottom: 0;
+	}
+	#rules span{
+	color: #082b71;
+	}
+	#rules span:hover{
+	text-decoration: underline;
+	}
+	#rules li{
+	list-style: outside;
+	padding: 1vh 3vh;
+	}
+	#ok{
+	margin: 3vh 25vw;
+	width: 5vw;
+	height: 5vh;
+	border-radius: 6px;
+    background: #fb792b;
+    color: #fff;
+    border-color: #fb792b;
+    font-size: 1.1vw;
+	font-weight: 800;
+	}
+	.icons i{
+	color: #222;
+	font-size: 4vw;
+	border: 2px solid #222;
+	padding: 1vw;
+	border-radius: 100%;
+	margin: 5vh;
+	}
+	.icons i:hover{
+	color: #800080;
+	border: 2px solid #800080;
+	padding: 1vw;
+	
+	}
+	.icons{
+	padding: 5vh 22vw 2vh 19vw;
+	font-family: 'Poppins', sans-serif;
+	}
+	.icons h1{
+	text-align: center;
+	font-size: 2vw;
+	}
+	.holidayspara{
+	width: 20vw;
+	height: 75vh;
+	margin: 2vw;
+	}
+	.holidayspara p{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2vh;
+	}
+	.holidaysinfo span{
+	font-weight: 900;
+	margin: 2vw;
+	}
+	.holidaysinfo h1{
+	font-size: 1.7vw;
+	padding: 1vh 1vh;
+	font-family: Times New Roman;
+	}
+	.holidays{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 2vh 10vw;
+	font-family: 'Noto Sans', sans-serif;
+	}
+	.holidays h2{
+	width: 100%;
+	text-align: center;
+	font-size: 2vw;
+	}
+	.connect{
+	background-image: linear-gradient(270deg,#9b4b90 0,#2c215d);
+	height: 5vh;
+	}
+	.connect p{
+	color: white;
+	line-height: 8vh;
+	}
+	.apps a i{
+	background-color: #4867AA;
+	font-size: 1.5vw;
+	color: white;
+	padding: 2.4vh 3vh;
+	border-radius: 10vw;
+	margin: 0 0 0.5vw 1vw;
+	}
+	footer{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #2c215d;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	padding: 2vw;
+	font-weight: 900;
+	position: relative;
+	}
+	.about{
+	padding: 2vw 5vw;
+	line-height: 6vh
+	}
+	.copyright{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-right: 10vw;
+	font-size: 0.8vw;
+	}
+	.phonenav{
+	width: 100%;
+	height: 10vh;
+	background: #213D77;
+	display: none;
+	color: white;
+	}
+	.phonenav h1{
+	padding: 1vh 30vw 1vh 1vh;
+	display: inline-block;
+	}
+	.formdiv1{
+	display: inline-block;
+    width: 25vw;
+    }
+	.formdiv2{
+	padding: 1vh;
+	}
+	@media screen and (max-width: 1000px){
+	.holidays{
+	display: visible;
+	}
+	nav{
+	display: none;
+	}
+	.ad2 img{
+	width: 100%;
+	}
+	.ad img{
+	width: 100%;
+	}
+	.ad3 img{
+	width: 100%;
+	}
+	.copyright img{
+	width: 100%;
+	}
+	.phonenav{
+	display: inline-block;
+	}
+	.formheading1 , .formheading2{
+	display:none;
+	}
+	form{
+	width: 80vw;
+	}
+	form h2 {
+    font-size: 8.55vw;
+	}
+	.forminputs {
+    width: 90%;
+	}
+	.formdiv1 , .formdiv2{
+    width: 100%;
+	}
+	.aside , .class{
+	width: 65%;
+	}
+	.date input {
+    width: 36.827vw;
+	}
+	#country {
+    width: 64vw;
+	}
+	.inputradio {
+    font-size: 4vw;
+	}
+	#submitbtn{
+	width: 24vw;
+    height: 5vh;
+	font-size: 3vw;
+	}
+	.info {
+    margin: 5vh;
+	width: 82vw;
+    font-size: 1.5vh;
+    height: 16vh;
+	}
+	main {
+    height: 117vh;
+	}
+	.icons{
+	padding:0;
+	}
+	.icons i{
+	margin: 3vh;
+	}
+	.holidayspara img{
+    width: 75vw;
+    }
+	.holidayspara{
+    width: 80vw;
+    }
+	#ok {
+    margin: 1vh 21vw;
+    width: 17vw;
+    height: 5vh;
+	font-size: 4vw;
+	}
+	#rules {
+    bottom: 2vw;
+    right: 12vw;
+    width: 73vw;
+    height: 95vh;
+	}
+	}
+	</style>
+</head>
+<body>
+    <div class="phonenav"><!--.phonenav used only in media queries-->
+	 <i class="fas fa-bars" style="color: white; font-size: 4vh; padding: 1vh;" ></i><h1>IRCTC</h1>
+	 <i class="far fa-bell"style="color: white; font-size: 4vh; padding: 1vh;"></i><!--icon-->
+	 <i class="fas fa-user-alt"style="color: white; font-size: 4vh; padding: 1vh;"></i><!--icon-->
+	</div><!-- end of .phonenav used only in media queries-->
+    <nav><!--Starting of nav bar-->
+	<img src="https://www.irctc.co.in/nget/assets/images/secondry-logo.png"><!--This is the First Logo of nav bar-->
+	<a href="#"><i class="fas fa-home" style="font-size: 2vh; color: black; margin-top: 10vh;"></i><!--icon--></a><!--This is the HOME icon redirecting to home page-->
+	<ul class="lists"> 
+	<li class="mainli"><a href="#">LOGIN</a></li>
+	<li class="lightul"><a href="#">REGISTER</a></li>
+	<li class="lightul"><a href="#">AGENT LOGIN</a></li>
+	<li class="lightul"><a href="#">CONTACT</a></li>
+	<li class="lightul"><a href="#">ASK DISHA</a></li>
+	<li><a href="#">09-Oct-2021 [14:21:59]</a></li>
+	<li><a href="#">A<sup>- </sup>A&nbsp; A<sup>+</sup></a></li>
+	<li><a href="#">हिंदी</a></li><br>
+	<li class="mainli"><a href="#">IRCTC EXCLUSIVE</a></li>
+	<li><a style="color: rgba(251,121,43,1); border-bottom: 2px solid rgba(251,121,43,1); font-weight: 700;"  href="#">TRAINS</a></li>
+	<li class="lightul"><a href="#">BUSES</a></li>
+	<li class="lightul"><a href="#">FLIGHTS</a></li>
+	<li class="lightul"><a href="#">HOTELS</a></li>
+	<li class="lightul"><a href="#">HOLIDAY</a></li>
+	<li class="lightul"><a href="#">LOYALITY</a></li>
+	<li class="mainli"><a href="#">PREMIUM PARTNER</a></li>
+	<li class="lightul"><a href="#">MORE</a></li>
+	</ul>
+	<img src="https://www.irctc.co.in/nget/assets/images/logo.png"><!--This is the Second Logo of nav bar-->
+	</nav><!--Ending of nav bar-->
+	<main><!--Main tag starts here-->
+	<div class="form"><!--starting of div class form containing formheading as well as form-->
+	<div class="formheading"><!--Start of formheading class consisting of two divs-->
+	<div class="formheading1"><img src="https://www.irctc.co.in/nget/assets/images/icons/pnr.png">PNR STATUS</div>
+	<div class="formheading2"><img src="https://www.irctc.co.in/nget/assets/images/icons/chart.png">CHARTS/VACANCY</div>
+	</div><!--End of formheading class consisting of two divs-->
+	<form><!--Form tag Starts here-->
+	<h2>Book Ticket</h2>
+	<div class="formdiv1">
+	<div class="forminputs , from">
+	<i class="fas fa-location-arrow"></i><!--icon-->
+	<input required type="text" list="browsers" placeholder="From" class="formtext"	style="font-size: 2vh;">
+	<datalist id="browsers">
+    <option value="DADAR JR"></option>
+    <option value="ERODE JN"></option>
+    <option value="MUZAFFAR"></option>
+    <option value="HABIBGANJ HBJ"></option>
+    <option value="CHANDIGARH CDG"></option>
+	<option value="MUZAFFAR"></option>
+	<option value="MUZAFFAR"></option>
+	<option value="MUZAFFAR"></option>
+    </datalist>
+	</div><!--end of formdiv1 class consisting of TO AND FROM-->
+	<img src="https://static.thenounproject.com/png/592515-200.png" height ="20vh" style="padding: 0 25vw 0 10vw;">
+	<div class="forminputs , to">
+	<i class="fas fa-map-marker-alt"></i><!--icon-->
+	<input required type="text" list="browsers" placeholder="To" class="formtext" style="font-size: 2vh;">
+	<datalist id="browsers"></option>
+    <option value="Edge"></option>
+    <option value="Firefox"></option>
+    <option value="Chrome"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+    </datalist>
+	</div>
+	</div>
+	<div class="formdiv2"><!--Start of formdiv2 consisting of dates and classes-->
+	<div class="aside">
+	<label>DD/MM/YYY<sup>*</sup></label>
+	<div class="forminputs , date">
+	<i class="far fa-calendar-alt"></i><!--icon-->
+	<input type="date" name="party" required  value="2021-10-12" min="2021-10-12" max="2021-11-01" class="formtext" style="font-size: 2vh;"></textarea>
+	</div>
+	</div>
+	<div class="forminputs , class"><!--Start of class div-->
+	<i class="fas fa-briefcase"></i><!--icon-->
+	<select value="All Classes" required class="formtext" style="font-size: 2vh;"><!--Start of Select tag-->
+	<option value="GENERAL" color="#082b71">All Classes</option>
+    <option value="RUSSIA">Exec. Chair Car (EC)</option>
+    <option value="KOREA">AC 2 Tier (2A)</option>
+    <option value="JAPAN">First Class (FC)</option>
+    <option value="BRAZIL">AC 3 Tier (3A)</option>
+	<option value="AMERICA">AC 3 Economy (3E)</option>
+	<option value="AMERICA">AC Chair car (CC)</option>
+	<option value="AMERICA">Sleeper (SL)</option>
+	<option value="AMERICA">Second Sitting (2S)</option>
+    </select><!--ending of select-->
+	</div><!--End of class div-->
+	</div><!--End of formdiv2 consisting of dates and classes-->
+	
+	<div class="forminputs , to">
+	<i class="fas fa-th-large"></i><!--icon-->
+	<select value="GENERAL" name="country" id="country" class="formtext" style="font-size: 2vh;"><!--staring of select-->
+    <option value="INDIA" color="#082b71">GENERAL</option>
+    <option value="RUSSIA">LADIES</option>
+    <option value="KOREA">SR CITIZENS</option>
+    <option value="AMERICA">TATKAL</option>
+    <option value="JAPAN">DIVYANG</option>
+    <option value="BRAZIL">PREMIUM TATKAL</option>
+    </select><!--ending of select-->
+	</div>
+	<div class="inputradio">
+	<input type="checkbox" name="pay" class="radiobtn"><span id="Google Pay">&nbsp;&nbsp;Divyaang Concession</span>
+	<input type="checkbox" name="pay" class="radiobtn"><span id="Google Pay">&nbsp;&nbsp;Flexibility with Date</span>
+	<input type="checkbox" name="pay" class="radiobtn"><span id="Google Pay">&nbsp;&nbsp;Train Available with Breth</span>
+	<input type="checkbox" name="pay" class="radiobtn"><span id="Google Pay">&nbsp;&nbsp;Railway Pass Concession</span>
+	</div>
+	<input type="submit" id="submitbtn" value="SEARCH">
+	</form>	<!--form tag ends here-->
+	
+	<div class="info">1. IRCTC Tejas Express Train no. 82501/82502 (LJN-NDLS-LJN) and Train no. 82901/82902 (MMCT-ADI-MMCT) are available for booking. 2. Book tickets on Darjeeling(DHR) Joy ride by searching from DJ to DJRZ or DJ to GHUM.</div>
+	</div><!--end of div class form containing formheading as well as form-->
+	</main><!--Main tag ends here-->
+	
+	<div class="ad"><!--This is an "ad"-->
+	<img src="https://s0.2mdn.net/10929958/EXPO2020_OP_ProgrammaticDisplayBanner_728x90.jpg">
+	</div>
+	
+	<div class="ad2"><!--This is an "ad"-->
+	<img src="https://tpc.googlesyndication.com/simgad/15006402427315996457?">
+	</div>
+	
+	<div class="icons"><!--starting of icons class with icons in it-->
+	<h1>Have you not found the right one?<br>
+	Find a service suitable for you here.</h1>
+	<i class="fas fa-plane"></i>
+	<i class="fas fa-bed"></i>
+	<i class="fas fa-chart-line"></i>
+	<i class="fas fa-concierge-bell"></i>
+	<i class="fas fa-bus-alt"></i>
+	<i class="fas fa-umbrella-beach"></i>
+	<i class="fas fa-train"></i>
+	<i class="fas fa-mountain"></i>
+	<i class="fas fa-subway"></i>
+	<i class="fas fa-cloud-sun"></i>
+	</div><!--Ending of icons class-->
+	
+	<div id="rules"><!--starting of rules id-->
+	<nav>Alert</nav>
+	<img src="https://s0.2mdn.net/10929958/EXPO2020_OP_ProgrammaticDisplayBanner_728x90.jpg" width="100%">
+	<p>	Hon'ble Prime Minister message on "Public Health Response to COVID-19: Campaign for COVID-Appropriate Behaviour".<span> Wear Mask, Follow Physical Distancing, Maintain Hand Hygine.</span><br><br>
+	Get your favourite food at your train seat through <span>e-Catering</span> available at selected stations.<br><br>
+	COVID 19 Alert:<br>
+	<li>Information on Covid 19 Vaccination Programme</li>
+	<li>All passengers are hereby informed that downloading of Aarogya Setu App on their mobile phone, that they are carrying along, is advisable.</li>
+	<li>All Passenger to kindly note that on arrival at their destination, the traveling passengers will have to adhere to such health protocols as are prescribed by the destination State/UT.<span> Click Here to see state wise advisory on Arrival(As available)</span>. For other states,State Govt websites may be visited to ascertain the same</li>
+	<li>Though various State Governments' Advisories have been provided on IRCTC Website, Still Users are advised to surf Destination State Government URL/ Website for latest instructions on Covid-19 pandemic and Covid appropriate behaviour.</li>
+	<li>Catering Service is not available and catering charges not included in the fare.</li>
+	<li> No blanket and linen shall be provided in the train.</li><hr>
+	<button id="ok" onclick="myFunction()">OK</button>
+	</p>
+	</div><!--ending of rules class-->
+	
+    <div class="ad3"><!--This is an "ad"-->
+	<img src="https://tpc.googlesyndication.com/simgad/12025834278786869454">
+	</div>
+	
+	<div class="holidays"><!--start of holidays class consisting of images and information class-->
+	<h2>HOLIDAYS</h2>
+	<div class="holidaysinfo"><!--start of holidayinfo used to make span inline-->
+	<div class="holidayspara"><!-- start Holidayspara with img and info in it-->
+	<img src="https://www.irctc.co.in/nget/assets/images/exterior.jpg">
+	<h1>Maharajas' Express</h1>
+	<p>	Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a very sojourn to the era of bygone stately on a splendour of princely states. Also, Sylvan furnishings, elegant ambience as well as modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p>
+	</div>
+	<span>Read More-></span>
+	</div><!--end of holidayinfo used to make span inline-->
+	
+	
+	<div class="holidaysinfo"><!--start of holidayinfo used to make span inline-->
+	<div class="holidayspara">
+	<img src="https://www.irctc.co.in/nget/assets/images/Thailand.jpg">
+	<h1>International Packages</h1>
+	<p> Best deals for you : International Holiday packages, handpicked by IRCTC itself, for Thailand, France, Dubai, Sri Lanka, Hong Kong , China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are also inclusive of sightseeing , meals, visa charges and even overseas medical insurance to give you a hassle-free and memorable experience.</p>
+	</div><!-- end Holidayspara with img and info in it-->
+	<span>Read More-></span>
+	</div><!--end of holidayinfo used to make span inline-->
+	
+	<div class="holidaysinfo"><!--start of holidayinfo used to make span inline-->
+	<div class="holidayspara"><!-- start Holidayspara with img and info in it-->
+	<img src="https://www.irctc.co.in/nget/assets/images/Kashmir.jpg">
+	<h1>Domestic Air Packages</h1>
+	<p>	Be it the spiritual devotee seeking bless of Tirupati, Shirdi or Mata Vaishno Devi and the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India through IRCTC!</p>
+	</div><!-- end Holidayspara with img and info in it-->
+	<span>Read More-></span>
+	</div><!--end of holidayinfo used to make span inline-->
+	
+	<div class="holidaysinfo"><!--start of holidayinfo used to make span inline-->
+	<div class="holidayspara"><!-- start Holidayspara with img and info in it-->
+	<img src="https://www.irctc.co.in/nget/assets/images/Buddha_Banner.jpg">
+	<h1>Buddhist Circuit Tourist Trains</h1>
+	<p>India, the country where Buddhism was to be first originated has richest memories of the main Buddhist legacy. As the parts of it's drive towards austerity, the only kind of art & architecture that its supported we're Stupas, Chaityas & Viharas. Buddhist Train India will help you visit all these places up close for a truly religious experience.</p>
+	</div><!-- end Holidayspara with img and info in it-->
+	<span>Read More-></span>
+	</div><!--end of holidayinfo used to make span inline-->
+	
+	<div class="holidaysinfo"><!--start of holidayinfo used to make span inline-->
+	<div class="holidayspara"><!-- start Holidayspara with img and info in it-->
+	<img src="https://www.irctc.co.in/nget/assets/images/Manali.jpg">
+	<h1>Rail Tour Packages</h1>
+	<p>IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.</p>
+	</div><!-- end Holidayspara with img and info in it-->
+	<span>Read More-></span>
+	</div><!--end of holidayinfo used to make span inline-->
+	
+	<div class="holidayspara"><!--Holidayspara with ad-->
+	<img src="https://tpc.googlesyndication.com/simgad/3899264503158015803?">
+	</div>
+	</div><!--End of holidays class-->
+	
+	<nav class="connect"><p>Get Connected with us on social networks</p>
+	<div class="apps">
+	    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f" style="padding: 2.4vh 3vh;"></i><!--This is an icon with stylling given directly--></a><!--This is a link with icon-->
+		<a href="mailto:info@maginfotech.com"><i class="fab fa-youtube" style="background: #FF0000; padding: 2vh;"></i><!--This is an icon with stylling given directly--></a><!--This is a link with icon-->
+		<a href="https://www.facebook.com/"><i class="fab fa-instagram" style="background: #2e5e86;padding: 2.4vh 2.5vh;"></i><!--This is an icon with stylling given directly--></a><!--This is a link with icon-->
+		<a href="https://www.instagram.com/"><i class="fab fa-linkedin-in" style="background: #0270AD; padding: 2.4vh 2.5vh;"></i><!--This is an icon with stylling given directly--></a><!--This is a link with icon-->
+		<a href="https://www.instagram.com/"><i class="fab fa-telegram" style="padding: 2.4vh 2.5vh; background: #29A2E0;"></i></a><!--This is an icon with stylling given directly-->
+		<a href="https://www.instagram.com/"><i class="fab fa-tumblr" style="padding: 2.4vh 3vh; background: #29A2E0;"></i></a>
+		<a href="https://www.instagram.com/"><i class="fab fa-pinterest" style="background: #C51F26; padding: 2.4vh 2.5vh;"></i><!--This is an icon with stylling given directly--></a>
+		<a href="https://twitter.com/?lang=en"><i class="fab fa-twitter" style="padding: 2.4vh 2.5vh; background: #4C9BE5;"></i><!--This is an icon with stylling given directly--></a><!--This is a link with icon-->
+		</div></nav>
+	<footer><!-- starting of footer-->
+	<div class="about">
+          <li style="color: rgb(169, 183, 197); font-weight: 900;">IRCTC Trains</li>
+          <li>General Information</li>
+          <li>Important Information</li>
+          <li>Agents</li>
+          <li>Enquiries</li>
+        </div>
+        <div class="about">
+          <li style="color: rgb(169, 183, 197); font-weight: 900;">How To</li>
+          <li>IRCTC Official App</li>
+          <li>Advertise with us</li>
+          <li>Refund Rules</li>
+          <li>Divyangjan Facilities</li>
+        </div>
+        <div class="about">
+          <li style="color: rgb(169, 183, 197); font-weight: 900;">POLICY</li>
+          <li>IRCTC eWallet</li>
+          <li>IRCTC Loyalty Program</li>
+          <li>IRCTC-iPAY Payment Gateway<li>
+          <li>IRCTC Zone</li>
+        </div>
+        <div class="about">
+          <li style="color: rgb(169, 183, 197); font-weight: 900;">For Newly Migrated Agents</li>
+          <li>Mobile Zone</li>
+          <li>Integration Policy</li>
+          <li>Ask Disha ChatBot</li>
+          <li>About us</li>
+        </div>
+	</footer><!-- ending of footer-->
+	<div class="copyright">
+	<img src="https://www.irctc.co.in/nget/assets/images/security.png">
+	Copyright Â© 2021 - www.irctc.co.in. All Rights Reserved<br>
+	Designed and Hosted by CRIS<br>
+	Compatible Browsers<br>
+	DM06AP30MS4<br>
+	</div>
+	<script>
+	function myFunction() {
+  var x = document.getElementById("rules");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } 
+  else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
